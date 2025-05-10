@@ -17,20 +17,21 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-[#111111] text-white font-sans">
       {/* Header/Nav */}
-      <header className="fixed w-full flex justify-between items-center px-6 py-6 md:px-12 z-50 backdrop-blur-sm bg-background/50 border-b border-white/5">
-        <div className="flex items-center gap-4">
-          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8 md:h-9" />
-          <span className="hidden md:block text-lg font-semibold tracking-tight">{'YouBuild Protocol'}</span>
+      <header className="fixed w-full flex justify-between items-center px-6 py-4 md:px-12 z-50 bg-black/90 backdrop-blur-md">
+        <div className="flex items-center gap-3">
+          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8" />
+          <div className="hidden md:flex items-center gap-8 ml-12">
+            <a href="#features" className="text-white/70 hover:text-white text-sm font-medium">Features</a>
+            <a href="#pricing" className="text-white/70 hover:text-white text-sm font-medium">Pricing</a>
+            <a href="#faq" className="text-white/70 hover:text-white text-sm font-medium">FAQ</a>
+          </div>
         </div>
-        <nav className="hidden md:flex gap-8 text-[#d3d0cc] text-base">
-          <a href="#features" className="hover:text-[#CDEB63]">Features</a>
-          <a href="#faq" className="hover:text-[#CDEB63]">FAQ</a>
-        </nav>
-        <div className="hidden md:block">
-          <a href="#get-started" className="bg-[#CDEB63] text-[#141414] px-6 py-2 rounded-lg font-semibold">Get Started</a>
+        <div className="hidden md:flex items-center gap-4">
+          <a href="#login" className="text-white/70 hover:text-white text-sm font-medium">Log in</a>
+          <a href="#get-started" className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-white/90 transition">Get Started</a>
         </div>
         <button
-          className="md:hidden text-[#CDEB63] text-3xl focus:outline-none"
+          className="md:hidden text-white text-2xl focus:outline-none"
           aria-label="Open menu"
           onClick={() => setDrawerOpen(true)}>
           ☰
@@ -74,32 +75,29 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center pt-40 pb-32 px-6 md:px-12 text-center relative overflow-hidden min-h-screen">
+      <section className="flex flex-col items-center justify-center pt-32 pb-24 px-6 md:px-12 text-center relative overflow-hidden min-h-screen bg-black">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[#111111]"></div>
-          <div className="absolute inset-0 animate-pulse" style={{ background: 'radial-gradient(circle at 50% 50%, rgba(99, 235, 164, 0.15) 0%, rgba(0,0,0,0) 50%)' }}></div>
-          <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-[#63EB9F]/20 to-transparent top-0"></div>
-          {/* Animated blockchain grid */}
-          <div className="absolute inset-0 opacity-20" style={{ 
-            backgroundImage: 'linear-gradient(#63EB9F 1px, transparent 1px), linear-gradient(90deg, #63EB9F 1px, transparent 1px)',
-            backgroundSize: '50px 50px',
-            animation: 'slide 20s linear infinite'
-          }}></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black"></div>
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent"></div>
         </div>
-        <h1 className="text-4xl md:text-7xl font-extrabold leading-tight text-white mb-8 tracking-tight max-w-4xl">
-          Build the Future of <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#63EB9F] to-[#63EBEB]">Web3 Social</span>
-        </h1>
-        <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-[#d3d0cc] font-medium leading-relaxed">
-          YouBuild Protocol is pioneering the next generation of decentralized social networks. Powered by blockchain technology, our platform enables true data ownership, seamless token integration, and community governance.
-        </p>
-        <div className="flex gap-4 mt-8">
-          <a href="#get-started" className="bg-gradient-to-r from-[#63EB9F] to-[#63EBEB] text-[#141414] px-8 py-3 rounded-lg font-semibold text-lg shadow-lg shadow-[#63EB9F]/20 hover:scale-105 transition">
-            Start Building
-          </a>
-          <a href="#features" className="border border-[#63EB9F] text-[#63EB9F] px-8 py-3 rounded-lg font-semibold text-lg hover:bg-[#63EB9F]/10 transition">
-            Learn More
-          </a>
-        </div>
+        <div className="max-w-[920px] mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] text-white mb-6">
+            Build the Future of <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Web3 Social</span>
+          </h1>
+          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-8 leading-relaxed">
+            YouBuild Protocol is pioneering the next generation of decentralized social networks with true data ownership and seamless token integration.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <a href="#get-started" className="w-full md:w-auto bg-white hover:bg-white/90 text-black px-8 py-4 rounded-full font-semibold text-base transition">
+              Start Building Free
+            </a>
+            <a href="#demo" className="w-full md:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold text-base transition flex items-center justify-center gap-2">
+              <span>Watch Demo</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          </div>
         <div className="w-full flex justify-center mt-12">
           <div className="bg-[#181818] rounded-xl w-full max-w-2xl aspect-video p-8 relative overflow-hidden">
             <div className="absolute inset-0 opacity-30" style={{
