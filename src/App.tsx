@@ -15,9 +15,9 @@ function App() {
   }, [drawerOpen]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#141414] text-[#d3d0cc] font-sans">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] text-[#f5f5f5] font-sans">
       {/* Header/Nav */}
-      <header className="w-full flex justify-between items-center px-4 py-3 md:px-10 relative z-20">
+      <header className="w-full flex justify-between items-center px-4 py-6 md:px-10 relative z-20 backdrop-blur-sm bg-black/10">
         <div className="flex items-center gap-3">
           {/* Logo placeholder (Safe logo retained) */}
           <img src="https://ext.same-assets.com/463685044/167154519.svg" alt="YouBuild Protocol Logo" className="h-7 md:h-9" />
@@ -75,7 +75,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center pt-8 pb-12 px-4 text-center relative overflow-hidden min-h-[80vh]">
+      <section className="flex flex-col items-center justify-center pt-20 pb-24 px-4 text-center relative overflow-hidden min-h-[90vh] bg-gradient-to-b from-transparent to-black/20">
         <div className="absolute inset-0 -z-10">
           {/* Example glow and moving shapes, replace with 3d videos or animated background if desired */}
           <div className="absolute left-1/4 top-0 w-[440px] h-[220px] bg-[#2add84]/30 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
@@ -206,7 +206,7 @@ function App() {
       {/* CTA Section */}
       <section className="px-4 pb-16 flex flex-col items-center">
         <h3 className="text-xl md:text-2xl font-bold mb-3 text-white">Create with <span className="text-[#2add84]">YouBuild Protocol</span> now</h3>
-        <a href="#get-started" className="bg-[#2add84] text-[#141414] px-8 py-3 rounded-full font-semibold text-lg shadow hover:scale-105 transition">Get Started</a>
+        <a href="#get-started" className="bg-[#2add84] text-[#141414] px-10 py-4 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-[#2add84]/20 hover:shadow-2xl">Get Started</a>
       </section>
 
       {/* Footer */}
@@ -238,7 +238,7 @@ function App() {
 // FeatureCard (little info+icon card for features/use cases)
 function FeatureCard({ title, desc, icon }: { title: string; desc: string; icon: string }) {
   return (
-    <div className="bg-[#181818] rounded-xl p-6 flex gap-4 items-start shadow hover:scale-105 transition">
+    <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 flex gap-6 items-start shadow-xl hover:scale-105 transition border border-white/5 hover:border-[#2add84]/20">
       <div className="text-3xl md:text-4xl">{icon}</div>
       <div>
         <div className="font-medium text-lg text-white mb-1">{title}</div>
