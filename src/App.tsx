@@ -56,15 +56,15 @@ function App() {
                 onClick={() => setDrawerOpen(false)}>
                 ×
               </button>
-              <a href="#features" className="text-lg font-semibold hover:text-[#2add84]" onClick={() => setDrawerOpen(false)}>
+              <a href="#features" className="text-lg font-semibold hover:text-[#CDEB63]" onClick={() => setDrawerOpen(false)}>
                 Features
               </a>
-              <a href="#faq" className="text-lg font-semibold hover:text-[#2add84]" onClick={() => setDrawerOpen(false)}>
+              <a href="#faq" className="text-lg font-semibold hover:text-[#CDEB63]" onClick={() => setDrawerOpen(false)}>
                 FAQ
               </a>
               <a
                 href="#get-started"
-                className="mt-8 bg-[#2add84] text-[#141414] px-6 py-3 rounded-lg font-semibold text-center hover:scale-105 transition"
+                className="mt-8 bg-[#CDEB63] text-[#141414] px-6 py-3 rounded-lg font-semibold text-center hover:scale-105 transition"
                 onClick={() => setDrawerOpen(false)}
               >
                 Get Started
@@ -87,11 +87,11 @@ function App() {
         <p className="mt-2 text-base md:text-lg max-w-2xl mx-auto text-[#d3d0cc] font-medium">
           YouBuild Protocol is an open-source framework empowering developers to build decentralized social applications with seamless integration of DeFi features. Built with EVM compatibility and leveraging a robust decentralized data layer, it provides an SDK for creating engaging, rewarding, and community-owned social experiences.
         </p>
-        <a href="#get-started" className="mt-8 bg-[#2add84] text-[#141414] px-8 py-3 rounded-full font-semibold text-lg shadow hover:scale-105 transition">
+        <a href="#get-started" className="mt-8 bg-[#CDEB63] text-[#141414] px-8 py-3 rounded-full font-semibold text-lg shadow hover:scale-105 transition">
           Build on YouBuild</a>
         <div className="w-full flex justify-center mt-12">
           {/* Placeholder for demo/animation/video section */}
-          <div className="bg-[#222]/80 rounded-xl w-full max-w-2xl aspect-video flex items-center justify-center text-[#2add84] text-2xl font-bold">
+          <div className="bg-[#222]/80 rounded-xl w-full max-w-2xl aspect-video flex items-center justify-center text-[#CDEB63] text-2xl font-bold">
             {/* Replace below with a 3d video background if available */}
             <span>Demo Area / 3D Video Placeholder</span>
           </div>
@@ -100,7 +100,7 @@ function App() {
 
       {/* Features Section */}
       <section id="features" className="px-4 py-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-10 text-[#2add84] text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-10 text-[#CDEB63] text-center">
           Why YouBuild Protocol?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -145,7 +145,7 @@ function App() {
 
       {/* About/Details Section */}
       <section className="px-4 py-12 bg-[#181818] max-w-4xl mx-auto rounded-xl mt-8 mb-10 shadow-xl">
-        <h2 className="text-xl md:text-2xl font-bold mb-5 text-[#2add84]">Protocol Vision</h2>
+        <h2 className="text-xl md:text-2xl font-bold mb-5 text-[#CDEB63]">Protocol Vision</h2>
         <p className="text-[#d3d0cc] text-base md:text-lg leading-relaxed">
           YouBuild Protocol is an innovative, open-source framework designed to revolutionize decentralized social applications.
           It provides developers with a comprehensive SDK enabling engaging, incentivized, and community-governed experiences with direct DeFi integration. Leveraging a robust decentralized data layer, YouBuild Protocol ensures true data ownership and censorship resistance for all platform users. The SDK’s modular, EVM-compatible architecture means you can build your dApp your way—accelerated, powerful, and open.
@@ -160,7 +160,7 @@ function App() {
 
       {/* Applications/Use Cases Section */}
       <section className="px-4 py-10 max-w-5xl mx-auto" id="applications">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#2add84] text-center">Potential Applications</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#CDEB63] text-center">Potential Applications</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FeatureCard title="Creator Economy Platforms" desc="Empower artists, content creators, and fans with direct crypto support and earning." icon="🎨" />
           <FeatureCard title="NFT Communities" desc="Unlock exclusive content and community features with NFT-gating and ownership." icon="🌐" />
@@ -173,40 +173,40 @@ function App() {
       {/* Stats Section - Placeholder values */}
       <section className="px-4 py-8 flex justify-center items-center gap-8 text-center max-w-3xl mx-auto">
         <div>
-          <div className="text-2xl font-bold text-[#2add84]">100% Open Source</div>
+          <div className="text-2xl font-bold text-[#CDEB63]">100% Open Source</div>
           <div className="text-sm text-[#6a6a68]">MIT License</div>
         </div>
         <div>
-          <div className="text-2xl font-bold text-[#2add84]">EVM Compatible</div>
+          <div className="text-2xl font-bold text-[#CDEB63]">EVM Compatible</div>
           <div className="text-sm text-[#6a6a68]">Ethereum, L2s, and more</div>
         </div>
         <div>
-          <div className="text-2xl font-bold text-[#2add84]">SDK v1.0</div>
+          <div className="text-2xl font-bold text-[#CDEB63]">SDK v1.0</div>
           <div className="text-sm text-[#6a6a68]">Launching 2025</div>
         </div>
       </section>
 
       {/* Newsletter Signup/CTA */}
       <section id="get-started" className="px-4 py-10 flex flex-col items-center">
-        <h3 className="text-xl md:text-2xl font-bold text-[#2add84] mb-4">Stay Updated on YouBuild Protocol</h3>
+        <h3 className="text-xl md:text-2xl font-bold text-[#CDEB63] mb-4">Stay Updated on YouBuild Protocol</h3>
         <p className="text-center text-[#6a6a68] mb-4 max-w-lg">Sign up for launch updates, developer guides, and community news.</p>
         <form className="flex flex-col md:flex-row gap-4 w-full max-w-sm" onSubmit={e => { e.preventDefault(); alert('Subscribed!'); }}>
-          <input type="email" placeholder="Email" className="px-4 py-3 rounded-lg bg-[#1b1b1b] border border-[#2add84] text-white" required />
-          <button type="submit" className="bg-[#2add84] text-[#141414] px-6 py-3 rounded-lg font-medium hover:scale-105 transition">Subscribe</button>
+          <input type="email" placeholder="Email" className="px-4 py-3 rounded-lg bg-[#1b1b1b] border border-[#CDEB63] text-white" required />
+          <button type="submit" className="bg-[#CDEB63] text-[#141414] px-6 py-3 rounded-lg font-medium hover:scale-105 transition">Subscribe</button>
         </form>
-        <small className="text-[#6a6a68] mt-2">By signing up, I confirm I have read and agree to the <a href="#" className="underline hover:text-[#2add84]">Privacy Policy</a>.</small>
+        <small className="text-[#6a6a68] mt-2">By signing up, I confirm I have read and agree to the <a href="#" className="underline hover:text-[#CDEB63]">Privacy Policy</a>.</small>
       </section>
 
       {/* FAQ Section */}
       <section id="faq" className="px-4 py-10 max-w-2xl mx-auto">
-        <h3 className="text-2xl font-bold text-[#2add84] mb-6">FAQ</h3>
+        <h3 className="text-2xl font-bold text-[#CDEB63] mb-6">FAQ</h3>
         <FaqAccordion />
       </section>
 
       {/* CTA Section */}
       <section className="px-4 pb-16 flex flex-col items-center">
-        <h3 className="text-xl md:text-2xl font-bold mb-3 text-white">Create with <span className="text-[#2add84]">YouBuild Protocol</span> now</h3>
-        <a href="#get-started" className="bg-[#2add84] text-[#141414] px-10 py-4 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-[#2add84]/20 hover:shadow-2xl">Get Started</a>
+        <h3 className="text-xl md:text-2xl font-bold mb-3 text-white">Create with <span className="text-[#CDEB63]">YouBuild Protocol</span> now</h3>
+        <a href="#get-started" className="bg-[#CDEB63] text-[#141414] px-10 py-4 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-[#CDEB63]/20 hover:shadow-2xl">Get Started</a>
       </section>
 
       {/* Footer */}
@@ -217,13 +217,13 @@ function App() {
             <div>&copy; 2023–2025 YouBuild Protocol (Open-source)</div>
           </div>
           <div className="flex flex-wrap gap-4">
-            <a href="#features" className="hover:text-[#2add84]">Features</a>
-            <a href="#faq" className="hover:text-[#2add84]">FAQ</a>
-            <a href="#get-started" className="hover:text-[#2add84]">Get Started</a>
+            <a href="#features" className="hover:text-[#CDEB63]">Features</a>
+            <a href="#faq" className="hover:text-[#CDEB63]">FAQ</a>
+            <a href="#get-started" className="hover:text-[#CDEB63]">Get Started</a>
           </div>
           <div className="flex gap-2 items-center mt-4 md:mt-0">
-            <a href="#" aria-label="Twitter" className="hover:text-[#2add84]">X</a>
-            <a href="#" aria-label="GitHub" className="hover:text-[#2add84]">GitHub</a>
+            <a href="#" aria-label="Twitter" className="hover:text-[#CDEB63]">X</a>
+            <a href="#" aria-label="GitHub" className="hover:text-[#CDEB63]">GitHub</a>
             {/* update your socials here */}
           </div>
         </div>
@@ -238,7 +238,7 @@ function App() {
 // FeatureCard (little info+icon card for features/use cases)
 function FeatureCard({ title, desc, icon }: { title: string; desc: string; icon: string }) {
   return (
-    <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 flex gap-6 items-start shadow-xl hover:scale-105 transition border border-white/5 hover:border-[#2add84]/20">
+    <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 flex gap-6 items-start shadow-xl hover:scale-105 transition border border-white/5 hover:border-[#CDEB63]/20">
       <div className="text-3xl md:text-4xl">{icon}</div>
       <div>
         <div className="font-medium text-lg text-white mb-1">{title}</div>
@@ -288,7 +288,7 @@ function FaqAccordion() {
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
           >
             <span className="font-semibold text-lg">{item.question}</span>
-            <span className="text-2xl text-[#2add84]">{openIndex === i ? '-' : '+'}</span>
+            <span className="text-2xl text-[#CDEB63]">{openIndex === i ? '-' : '+'}</span>
           </button>
           {openIndex === i && (
             <div className="p-4 text-[#6a6a68]">{item.answer}</div>
@@ -304,18 +304,18 @@ function CookieConsent() {
   const [visible, setVisible] = React.useState(true);
   if (!visible) return null;
   return (
-    <div className="fixed bottom-4 left-0 right-0 max-w-xl mx-auto bg-[#181818] text-[#d3d0cc] px-6 py-4 rounded-lg shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4 z-50 border border-[#2add84]">
-      <span className="text-sm">We use cookies to provide you with the best experience and to help improve our website and application. <a href="#" className="underline hover:text-[#2add84]">Read more</a>.</span>
+    <div className="fixed bottom-4 left-0 right-0 max-w-xl mx-auto bg-[#181818] text-[#d3d0cc] px-6 py-4 rounded-lg shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4 z-50 border border-[#CDEB63]">
+      <span className="text-sm">We use cookies to provide you with the best experience and to help improve our website and application. <a href="#" className="underline hover:text-[#CDEB63]">Read more</a>.</span>
       <div className="flex gap-2">
         <button
           onClick={() => setVisible(false)}
-          className="bg-[#2add84] text-[#141414] px-4 py-2 rounded-lg font-medium hover:scale-105 transition"
+          className="bg-[#CDEB63] text-[#141414] px-4 py-2 rounded-lg font-medium hover:scale-105 transition"
         >
           Accept all
         </button>
         <button
           onClick={() => setVisible(false)}
-          className="bg-[#333] text-white px-4 py-2 rounded-lg font-medium border border-[#2add84] hover:scale-105 transition"
+          className="bg-[#333] text-white px-4 py-2 rounded-lg font-medium border border-[#CDEB63] hover:scale-105 transition"
         >
           Necessary only
         </button>
