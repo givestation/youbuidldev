@@ -8,6 +8,9 @@ export default defineConfig({
     host: "0.0.0.0",
     hmr: {
       host: "0.0.0.0"
-    }
+    },
+    allowedHosts: [
+      ".replit.dev"
+    ]
   }
 });
