@@ -24,11 +24,11 @@ function App() {
           <span className="hidden md:block text-xl font-bold tracking-tight">{'YouBuild Protocol'}</span>
         </div>
         <nav className="hidden md:flex gap-8 text-[#d3d0cc] text-base">
-          <a href="#features" className="hover:text-[#2add84]">Features</a>
-          <a href="#faq" className="hover:text-[#2add84]">FAQ</a>
+          <a href="#features" className="hover:text-[#CDEB63]">Features</a>
+          <a href="#faq" className="hover:text-[#CDEB63]">FAQ</a>
         </nav>
         <div className="hidden md:block">
-          <a href="#get-started" className="bg-[#2add84] text-[#141414] px-6 py-2 rounded-lg font-semibold">Get Started</a>
+          <a href="#get-started" className="bg-[#CDEB63] text-[#141414] px-6 py-2 rounded-lg font-semibold">Get Started</a>
         </div>
         <button
           className="md:hidden text-[#2add84] text-3xl focus:outline-none"
@@ -76,10 +76,10 @@ function App() {
 
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center pt-20 pb-24 px-4 text-center relative overflow-hidden min-h-[90vh] bg-gradient-to-b from-transparent to-black/20">
-        <div className="absolute inset-0 -z-10">
-          {/* Example glow and moving shapes, replace with 3d videos or animated background if desired */}
-          <div className="absolute left-1/4 top-0 w-[440px] h-[220px] bg-[#2add84]/30 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
-          <div className="absolute right-6 bottom-0 w-[330px] h-[120px] bg-[#6556cd]/30 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
+        <div className="absolute inset-0 -z-10 bg-[#0a0a0a]">
+          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#CDEB63 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+          <div className="absolute left-1/4 top-0 w-[440px] h-[220px] bg-[#CDEB63]/20 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
+          <div className="absolute right-6 bottom-0 w-[330px] h-[120px] bg-[#CDEB63]/20 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
         </div>
         <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white mb-4">
           Empowering Decentralized Social with <span className="text-[#2add84]">DeFi Integration</span>
