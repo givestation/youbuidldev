@@ -5,16 +5,21 @@
 
 @layer base {
   :root {
-    --framer-font-family: Inter, sans-serif;
-    --framer-font-style: normal;
-    --framer-font-weight: 400;
-    --framer-text-color: #000;
-    --framer-font-size: 16px;
+    --wcm-text-small-regular-line-height: 16px;
+    --wcm-text-small-regular-letter-spacing: -0.03em;
+    --wcm-text-small-regular-text-transform: none;
+    --wcm-text-medium-regular-size: 16px;
+    --wcm-text-medium-regular-weight: 600;
+    --wcm-text-medium-regular-line-height: 20px;
+    --wcm-text-medium-regular-letter-spacing: -0.03em;
+    --wcm-text-medium-regular-text-transform: none;
+    --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+    --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on;
   }
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-[#0a0a0a];
   }
