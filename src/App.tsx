@@ -18,9 +18,9 @@ function App() {
     <div className="min-h-screen flex flex-col bg-[#111111] text-white font-sans">
       {/* Header/Nav */}
       <header className="fixed w-full flex justify-between items-center px-6 py-3 z-50 bg-black border-b border-gray-800">
-        <div className="flex items-center gap-6">
-          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-10" />
-          <div className="hidden md:flex items-center gap-8">
+        <img src="/youbuidlsocialsvg.svg" alt="CyberShield Logo" className="h-10" />
+        <nav className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
+          <div className="flex items-center gap-8 bg-gray-900/50 px-6 py-2 rounded-full backdrop-blur-sm">
             <div className="relative group">
               <button className="flex items-center gap-2 text-white hover:text-purple-400 text-base font-medium">
                 All Pages
@@ -32,7 +32,7 @@ function App() {
             <a href="#company" className="text-white hover:text-purple-400 text-base font-medium">Company</a>
             <a href="#career" className="text-white hover:text-purple-400 text-base font-medium">Career</a>
           </div>
-        </div>
+        </nav>
         <div className="hidden md:flex items-center gap-6">
           <div className="relative">
             <div className="absolute -top-2 -right-2 w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center text-xs text-white">0</div>
