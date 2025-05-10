@@ -81,22 +81,23 @@ function App() {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent"></div>
         </div>
         <div className="max-w-[920px] mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] text-white mb-6">
-            Build the Future of <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Web3 Social</span>
-          </h1>
-          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-8 leading-relaxed">
-            YouBuild Protocol is pioneering the next generation of decentralized social networks with true data ownership and seamless token integration.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-            <a href="#get-started" className="w-full md:w-auto bg-white hover:bg-white/90 text-black px-8 py-4 rounded-full font-semibold text-base transition">
-              Start Building Free
-            </a>
-            <a href="#demo" className="w-full md:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold text-base transition flex items-center justify-center gap-2">
-              <span>Watch Demo</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </a>
+            <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] text-white mb-6">
+              Build the Future of <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Web3 Social</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-8 leading-relaxed">
+              YouBuild Protocol is pioneering the next generation of decentralized social networks with true data ownership and seamless token integration.
+            </p>
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+              <a href="#get-started" className="w-full md:w-auto bg-white hover:bg-white/90 text-black px-8 py-4 rounded-full font-semibold text-base transition">
+                Start Building Free
+              </a>
+              <a href="#demo" className="w-full md:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold text-base transition flex items-center justify-center gap-2">
+                <span>Watch Demo</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+            </div>
           </div>
         <div className="w-full flex justify-center mt-12">
           <div className="bg-[#181818] rounded-xl w-full max-w-2xl aspect-video p-8 relative overflow-hidden">
