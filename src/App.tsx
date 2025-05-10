@@ -20,7 +20,7 @@ function App() {
       <header className="w-full flex justify-between items-center px-4 py-6 md:px-10 relative z-20 backdrop-blur-sm bg-black/10">
         <div className="flex items-center gap-3">
           {/* Official YouBuild Protocol logo */}
-          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-7 md:h-9" />
+          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8 md:h-10" />
           <span className="hidden md:block text-xl font-bold tracking-tight">{'YouBuild Protocol'}</span>
         </div>
         <nav className="hidden md:flex gap-8 text-[#d3d0cc] text-base">
@@ -213,7 +213,7 @@ function App() {
       <footer className="bg-[#181818] text-[#6a6a68] px-4 pt-8 pb-6 mt-auto text-sm">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6">
           <div>
-            <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-7 mb-2" />
+            <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8 mb-2" />
             <div>&copy; 2023–2025 YouBuild Protocol (Open-source)</div>
           </div>
           <div className="flex flex-wrap gap-4">
