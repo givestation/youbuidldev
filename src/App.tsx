@@ -173,6 +173,7 @@ function App() {
             title="EVM-Compatible Open Data Layer"
             desc="Powering censorship-resistant social apps where user data is community-owned and accessible, not locked in centralized silos."
             icon="💾"
+            darkMode={darkMode}
           />
           {/* Feature 2 */}
           <FeatureCard
@@ -300,7 +301,7 @@ function App() {
 }
 
 // FeatureCard (little info+icon card for features/use cases)
-function FeatureCard({ title, desc, icon }: { title: string; desc: string; icon: string }) {
+function FeatureCard({ title, desc, icon, darkMode }: { title: string; desc: string; icon: string; darkMode: boolean }) {
   return (
     <div className={`group rounded-2xl p-8 flex gap-6 items-start transition-all duration-300 border ${darkMode ? 'bg-[#161616] hover:bg-[#1a1a1a] border-[#222] hover:border-[#CDEB63]/30' : 'bg-gray-50 hover:bg-gray-100 border-gray-200 hover:border-[#CDEB63]'}`}>
       <div className="text-3xl md:text-4xl group-hover:scale-110 transition-transform duration-300">{icon}</div>
