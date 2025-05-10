@@ -75,16 +75,16 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center pt-20 pb-24 px-4 text-center relative overflow-hidden min-h-[90vh] bg-gradient-to-b from-transparent to-black/20">
+      <section className="flex flex-col items-center justify-center pt-32 pb-40 px-4 text-center relative overflow-hidden min-h-screen bg-gradient-to-b from-transparent to-black/20">
         <div className="absolute inset-0 -z-10 bg-[#0a0a0a]">
-          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#CDEB63 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
-          <div className="absolute left-1/4 top-0 w-[440px] h-[220px] bg-[#CDEB63]/20 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
-          <div className="absolute right-6 bottom-0 w-[330px] h-[120px] bg-[#CDEB63]/20 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
+          <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#CDEB63 1.5px, transparent 1.5px)', backgroundSize: '50px 50px' }}></div>
+          <div className="absolute left-1/4 top-0 w-[600px] h-[300px] bg-[#CDEB63]/10 blur-[100px] rounded-full rotate-12 hidden md:block animate-pulse" />
+          <div className="absolute right-6 bottom-0 w-[500px] h-[200px] bg-[#CDEB63]/10 blur-[100px] rounded-full rotate-12 hidden md:block animate-pulse" />
         </div>
-        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white mb-4">
+        <h1 className="text-4xl md:text-7xl font-extrabold leading-tight text-white mb-8 tracking-tight max-w-4xl">
           Empowering Decentralized Social with <span className="text-[#CDEB63]">DeFi Integration</span>
         </h1>
-        <p className="mt-2 text-base md:text-lg max-w-2xl mx-auto text-[#d3d0cc] font-medium">
+        <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-[#d3d0cc] font-medium leading-relaxed">
           YouBuild Protocol is an open-source framework empowering developers to build decentralized social applications with seamless integration of DeFi features. Built with EVM compatibility and leveraging a robust decentralized data layer, it provides an SDK for creating engaging, rewarding, and community-owned social experiences.
         </p>
         <a href="#get-started" className="mt-8 bg-[#CDEB63] text-[#141414] px-8 py-3 rounded-full font-semibold text-lg shadow hover:scale-105 transition">
@@ -99,11 +99,11 @@ function App() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="px-4 py-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-10 text-[#CDEB63] text-center">
+      <section id="features" className="px-4 py-32 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[#CDEB63] text-center tracking-tight">
           Why YouBuild Protocol?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Feature 1 */}
           <FeatureCard
             title="EVM-Compatible Open Data Layer"
@@ -238,11 +238,11 @@ function App() {
 // FeatureCard (little info+icon card for features/use cases)
 function FeatureCard({ title, desc, icon }: { title: string; desc: string; icon: string }) {
   return (
-    <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 flex gap-6 items-start shadow-xl hover:scale-105 transition border border-white/5 hover:border-[#CDEB63]/20">
-      <div className="text-3xl md:text-4xl">{icon}</div>
+    <div className="bg-black/10 backdrop-blur-sm rounded-3xl p-10 flex gap-8 items-start shadow-2xl hover:scale-[1.02] transition-all duration-300 border border-white/5 hover:border-[#CDEB63]/20">
+      <div className="text-4xl md:text-5xl">{icon}</div>
       <div>
-        <div className="font-medium text-lg text-white mb-1">{title}</div>
-        <div className="text-[#6a6a68] text-base">{desc}</div>
+        <div className="font-semibold text-xl text-white mb-3">{title}</div>
+        <div className="text-[#6a6a68] text-lg leading-relaxed">{desc}</div>
       </div>
     </div>
   );
