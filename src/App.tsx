@@ -31,7 +31,7 @@ function App() {
           <a href="#get-started" className="bg-[#CDEB63] text-[#141414] px-6 py-2 rounded-lg font-semibold">Get Started</a>
         </div>
         <button
-          className="md:hidden text-[#2add84] text-3xl focus:outline-none"
+          className="md:hidden text-[#CDEB63] text-3xl focus:outline-none"
           aria-label="Open menu"
           onClick={() => setDrawerOpen(true)}>
           ☰
@@ -82,7 +82,7 @@ function App() {
           <div className="absolute right-6 bottom-0 w-[330px] h-[120px] bg-[#CDEB63]/20 blur-3xl rounded-full rotate-12 hidden md:block animate-pulse" />
         </div>
         <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white mb-4">
-          Empowering Decentralized Social with <span className="text-[#2add84]">DeFi Integration</span>
+          Empowering Decentralized Social with <span className="text-[#CDEB63]">DeFi Integration</span>
         </h1>
         <p className="mt-2 text-base md:text-lg max-w-2xl mx-auto text-[#d3d0cc] font-medium">
           YouBuild Protocol is an open-source framework empowering developers to build decentralized social applications with seamless integration of DeFi features. Built with EVM compatibility and leveraging a robust decentralized data layer, it provides an SDK for creating engaging, rewarding, and community-owned social experiences.
