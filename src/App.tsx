@@ -2,6 +2,7 @@ import React from "react";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [darkMode, setDarkMode] = React.useState(true);
 
   React.useEffect(() => {
     if (drawerOpen) {
@@ -15,22 +16,35 @@ function App() {
   }, [drawerOpen]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#111111] text-white font-sans">
+    <div className={`min-h-screen flex flex-col font-sans transition-colors ${darkMode ? 'bg-[#111111] text-white' : 'bg-white text-black'}`}>
       {/* Header/Nav */}
-      <header className="fixed w-full flex justify-between items-center px-6 py-3 z-50 bg-black border-b border-gray-800">
+      <header className={`fixed w-full flex justify-between items-center px-6 py-3 z-50 border-b transition-colors ${darkMode ? 'bg-black border-gray-800' : 'bg-white border-gray-200'}`}>
         <img src="/youbuidlsocialsvg.svg" alt="CyberShield Logo" className="h-10" />
         <nav className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
           <div className="flex items-center gap-8 bg-[#CDEB63] text-black px-6 py-2 rounded-full">
             <div className="relative group">
               <button className="flex items-center gap-2 text-black hover:text-gray-700 text-base font-medium">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
                 All Pages
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
             </div>
-            <a href="#company" className="text-black hover:text-gray-700 text-base font-medium">Company</a>
-            <a href="#career" className="text-black hover:text-gray-700 text-base font-medium">Career</a>
+            <a href="#company" className="flex items-center gap-2 text-black hover:text-gray-700 text-base font-medium">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 8v12h20V8L12 2zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+              </svg>
+              Company
+            </a>
+            <a href="#career" className="flex items-center gap-2 text-black hover:text-gray-700 text-base font-medium">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+              </svg>
+              Career
+            </a>
           </div>
         </nav>
         <div className="hidden md:flex items-center gap-6">
@@ -42,7 +56,21 @@ function App() {
               </svg>
             </a>
           </div>
-          <a href="#get-started" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-full text-base font-medium transition-all duration-200 flex items-center gap-2">
+          <button 
+            onClick={() => setDarkMode(!darkMode)}
+            className="mr-4 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            {darkMode ? (
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            ) : (
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            )}
+          </button>
+          <a href="#get-started" className="bg-[#CDEB63] hover:bg-[#bcd952] text-black px-6 py-2.5 rounded-full text-base font-medium transition-all duration-200 flex items-center gap-2">
             Get Started
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14m-7-7l7 7-7 7"/>
