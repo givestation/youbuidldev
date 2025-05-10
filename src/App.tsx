@@ -18,7 +18,7 @@ function App() {
   return (
     <div className={`min-h-screen flex flex-col font-sans transition-colors ${darkMode ? 'bg-[#111111] text-white' : 'bg-white text-black'}`}>
       {/* Header/Nav */}
-      <header className={`fixed w-full flex justify-between items-center px-6 py-3 z-50 border-b transition-colors ${darkMode ? 'bg-black border-gray-800' : 'bg-white border-gray-200'}`}>
+      <header className={`fixed w-full flex justify-between items-center px-6 py-3 z-50 border-b transition-colors ${darkMode ? 'bg-[#111111] border-gray-800' : 'bg-white border-gray-200'}`}>
         <img src="/youbuidlsocialsvg.svg" alt="CyberShield Logo" className="h-10" />
         <nav className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
           <div className="flex items-center gap-8 bg-[#CDEB63] text-black px-6 py-2 rounded-full">
@@ -163,7 +163,7 @@ function App() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="px-6 py-32 md:px-12 max-w-7xl mx-auto w-full">
+      <section id="features" className={`px-6 py-32 md:px-12 max-w-7xl mx-auto w-full ${darkMode ? 'bg-[#111111]' : 'bg-white'}`}>
         <h2 className="text-4xl md:text-6xl font-bold mb-20 text-[#CDEB63] text-center tracking-tight">
           Why YouBuild Protocol?
         </h2>
@@ -302,7 +302,7 @@ function App() {
 // FeatureCard (little info+icon card for features/use cases)
 function FeatureCard({ title, desc, icon }: { title: string; desc: string; icon: string }) {
   return (
-    <div className="group bg-[#161616] rounded-2xl p-8 flex gap-6 items-start hover:bg-[#1a1a1a] transition-all duration-300 border border-[#222] hover:border-[#CDEB63]/30">
+    <div className={`group rounded-2xl p-8 flex gap-6 items-start transition-all duration-300 border ${darkMode ? 'bg-[#161616] hover:bg-[#1a1a1a] border-[#222] hover:border-[#CDEB63]/30' : 'bg-gray-50 hover:bg-gray-100 border-gray-200 hover:border-[#CDEB63]'}`}>
       <div className="text-3xl md:text-4xl group-hover:scale-110 transition-transform duration-300">{icon}</div>
       <div>
         <div className="font-semibold text-xl text-white mb-2">{title}</div>
