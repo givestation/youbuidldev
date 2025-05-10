@@ -20,17 +20,17 @@ function App() {
       <header className="fixed w-full flex justify-between items-center px-6 py-3 z-50 bg-black border-b border-gray-800">
         <img src="/youbuidlsocialsvg.svg" alt="CyberShield Logo" className="h-10" />
         <nav className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
-          <div className="flex items-center gap-8 bg-gray-900/50 px-6 py-2 rounded-full backdrop-blur-sm">
+          <div className="flex items-center gap-8 bg-[#CDEB63] text-black px-6 py-2 rounded-full">
             <div className="relative group">
-              <button className="flex items-center gap-2 text-white hover:text-purple-400 text-base font-medium">
+              <button className="flex items-center gap-2 text-black hover:text-gray-700 text-base font-medium">
                 All Pages
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
             </div>
-            <a href="#company" className="text-white hover:text-purple-400 text-base font-medium">Company</a>
-            <a href="#career" className="text-white hover:text-purple-400 text-base font-medium">Career</a>
+            <a href="#company" className="text-black hover:text-gray-700 text-base font-medium">Company</a>
+            <a href="#career" className="text-black hover:text-gray-700 text-base font-medium">Career</a>
           </div>
         </nav>
         <div className="hidden md:flex items-center gap-6">
