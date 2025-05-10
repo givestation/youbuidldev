@@ -17,11 +17,10 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-[#111111] text-white font-sans">
       {/* Header/Nav */}
-      <header className="fixed w-full flex justify-between items-center px-6 py-8 md:px-12 relative z-50 bg-transparent">
-        <div className="flex items-center gap-3">
-          {/* Official YouBuild Protocol logo */}
-          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8 md:h-10" />
-          <span className="hidden md:block text-xl font-bold tracking-tight">{'YouBuild Protocol'}</span>
+      <header className="fixed w-full flex justify-between items-center px-6 py-6 md:px-12 z-50 backdrop-blur-sm bg-background/50 border-b border-white/5">
+        <div className="flex items-center gap-4">
+          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8 md:h-9" />
+          <span className="hidden md:block text-lg font-semibold tracking-tight">{'YouBuild Protocol'}</span>
         </div>
         <nav className="hidden md:flex gap-8 text-[#d3d0cc] text-base">
           <a href="#features" className="hover:text-[#CDEB63]">Features</a>
