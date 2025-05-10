@@ -15,9 +15,9 @@ function App() {
   }, [drawerOpen]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] text-[#f5f5f5] font-sans">
+    <div className="min-h-screen flex flex-col bg-[#111111] text-white font-sans">
       {/* Header/Nav */}
-      <header className="w-full flex justify-between items-center px-4 py-6 md:px-10 relative z-20 backdrop-blur-sm bg-black/10">
+      <header className="fixed w-full flex justify-between items-center px-6 py-8 md:px-12 relative z-50 bg-transparent">
         <div className="flex items-center gap-3">
           {/* Official YouBuild Protocol logo */}
           <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8 md:h-10" />
@@ -75,11 +75,11 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center pt-32 pb-40 px-4 text-center relative overflow-hidden min-h-screen bg-gradient-to-b from-transparent to-black/20">
-        <div className="absolute inset-0 -z-10 bg-[#0a0a0a]">
-          <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#CDEB63 1.5px, transparent 1.5px)', backgroundSize: '50px 50px' }}></div>
-          <div className="absolute left-1/4 top-0 w-[600px] h-[300px] bg-[#CDEB63]/10 blur-[100px] rounded-full rotate-12 hidden md:block animate-pulse" />
-          <div className="absolute right-6 bottom-0 w-[500px] h-[200px] bg-[#CDEB63]/10 blur-[100px] rounded-full rotate-12 hidden md:block animate-pulse" />
+      <section className="flex flex-col items-center justify-center pt-40 pb-32 px-6 md:px-12 text-center relative overflow-hidden min-h-screen">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-[#111111]"></div>
+          <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 50% 50%, rgba(205, 235, 99, 0.15) 0%, rgba(0,0,0,0) 50%)' }}></div>
+          <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-[#CDEB63]/20 to-transparent top-0"></div>
         </div>
         <h1 className="text-4xl md:text-7xl font-extrabold leading-tight text-white mb-8 tracking-tight max-w-4xl">
           Empowering Decentralized Social with <span className="text-[#CDEB63]">DeFi Integration</span>
@@ -99,8 +99,8 @@ function App() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="px-4 py-32 max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[#CDEB63] text-center tracking-tight">
+      <section id="features" className="px-6 py-32 md:px-12 max-w-7xl mx-auto w-full">
+        <h2 className="text-4xl md:text-6xl font-bold mb-20 text-[#CDEB63] text-center tracking-tight">
           Why YouBuild Protocol?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -204,13 +204,13 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-4 pb-16 flex flex-col items-center">
-        <h3 className="text-xl md:text-2xl font-bold mb-3 text-white">Create with <span className="text-[#CDEB63]">YouBuild Protocol</span> now</h3>
-        <a href="#get-started" className="bg-[#CDEB63] text-[#141414] px-10 py-4 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-[#CDEB63]/20 hover:shadow-2xl">Get Started</a>
+      <section className="px-6 md:px-12 py-32 flex flex-col items-center bg-[#161616] border-t border-[#222]">
+        <h3 className="text-2xl md:text-4xl font-bold mb-8 text-white">Create with <span className="text-[#CDEB63]">YouBuild Protocol</span> now</h3>
+        <a href="#get-started" className="bg-[#CDEB63] text-black px-12 py-4 rounded-xl font-semibold text-lg hover:bg-[#d4ee7d] transition-all duration-300">Get Started</a>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#181818] text-[#6a6a68] px-4 pt-8 pb-6 mt-auto text-sm">
+      <footer className="bg-[#111111] text-[#888] px-6 md:px-12 py-12 mt-auto text-sm border-t border-[#222]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6">
           <div>
             <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8 mb-2" />
@@ -238,11 +238,11 @@ function App() {
 // FeatureCard (little info+icon card for features/use cases)
 function FeatureCard({ title, desc, icon }: { title: string; desc: string; icon: string }) {
   return (
-    <div className="bg-black/10 backdrop-blur-sm rounded-3xl p-10 flex gap-8 items-start shadow-2xl hover:scale-[1.02] transition-all duration-300 border border-white/5 hover:border-[#CDEB63]/20">
-      <div className="text-4xl md:text-5xl">{icon}</div>
+    <div className="group bg-[#161616] rounded-2xl p-8 flex gap-6 items-start hover:bg-[#1a1a1a] transition-all duration-300 border border-[#222] hover:border-[#CDEB63]/30">
+      <div className="text-3xl md:text-4xl group-hover:scale-110 transition-transform duration-300">{icon}</div>
       <div>
-        <div className="font-semibold text-xl text-white mb-3">{title}</div>
-        <div className="text-[#6a6a68] text-lg leading-relaxed">{desc}</div>
+        <div className="font-semibold text-xl text-white mb-2">{title}</div>
+        <div className="text-[#888] text-base leading-relaxed">{desc}</div>
       </div>
     </div>
   );
