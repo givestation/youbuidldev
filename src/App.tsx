@@ -77,22 +77,41 @@ function App() {
       <section className="flex flex-col items-center justify-center pt-40 pb-32 px-6 md:px-12 text-center relative overflow-hidden min-h-screen">
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-[#111111]"></div>
-          <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 50% 50%, rgba(205, 235, 99, 0.15) 0%, rgba(0,0,0,0) 50%)' }}></div>
-          <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-[#CDEB63]/20 to-transparent top-0"></div>
+          <div className="absolute inset-0 animate-pulse" style={{ background: 'radial-gradient(circle at 50% 50%, rgba(99, 235, 164, 0.15) 0%, rgba(0,0,0,0) 50%)' }}></div>
+          <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-[#63EB9F]/20 to-transparent top-0"></div>
+          {/* Animated blockchain grid */}
+          <div className="absolute inset-0 opacity-20" style={{ 
+            backgroundImage: 'linear-gradient(#63EB9F 1px, transparent 1px), linear-gradient(90deg, #63EB9F 1px, transparent 1px)',
+            backgroundSize: '50px 50px',
+            animation: 'slide 20s linear infinite'
+          }}></div>
         </div>
         <h1 className="text-4xl md:text-7xl font-extrabold leading-tight text-white mb-8 tracking-tight max-w-4xl">
-          Empowering Decentralized Social with <span className="text-[#CDEB63]">DeFi Integration</span>
+          Build the Future of <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#63EB9F] to-[#63EBEB]">Web3 Social</span>
         </h1>
         <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-[#d3d0cc] font-medium leading-relaxed">
-          YouBuild Protocol is an open-source framework empowering developers to build decentralized social applications with seamless integration of DeFi features. Built with EVM compatibility and leveraging a robust decentralized data layer, it provides an SDK for creating engaging, rewarding, and community-owned social experiences.
+          YouBuild Protocol is pioneering the next generation of decentralized social networks. Powered by blockchain technology, our platform enables true data ownership, seamless token integration, and community governance.
         </p>
-        <a href="#get-started" className="mt-8 bg-[#CDEB63] text-[#141414] px-8 py-3 rounded-full font-semibold text-lg shadow hover:scale-105 transition">
-          Build on YouBuild</a>
+        <div className="flex gap-4 mt-8">
+          <a href="#get-started" className="bg-gradient-to-r from-[#63EB9F] to-[#63EBEB] text-[#141414] px-8 py-3 rounded-lg font-semibold text-lg shadow-lg shadow-[#63EB9F]/20 hover:scale-105 transition">
+            Start Building
+          </a>
+          <a href="#features" className="border border-[#63EB9F] text-[#63EB9F] px-8 py-3 rounded-lg font-semibold text-lg hover:bg-[#63EB9F]/10 transition">
+            Learn More
+          </a>
+        </div>
         <div className="w-full flex justify-center mt-12">
-          {/* Placeholder for demo/animation/video section */}
-          <div className="bg-[#222]/80 rounded-xl w-full max-w-2xl aspect-video flex items-center justify-center text-[#CDEB63] text-2xl font-bold">
-            {/* Replace below with a 3d video background if available */}
-            <span>Demo Area / 3D Video Placeholder</span>
+          <div className="bg-[#181818] rounded-xl w-full max-w-2xl aspect-video p-8 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-30" style={{
+              backgroundImage: 'radial-gradient(#63EB9F 1px, transparent 1px)',
+              backgroundSize: '30px 30px',
+              animation: 'pulse 2s infinite'
+            }}></div>
+            <div className="relative z-10 h-full flex items-center justify-center">
+              <div className="text-[#63EB9F] text-xl font-mono">
+                <span className="animate-pulse">{">"}</span> Building the decentralized future...
+              </div>
+            </div>
           </div>
         </div>
       </section>
