@@ -17,18 +17,38 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-[#111111] text-white font-sans">
       {/* Header/Nav */}
-      <header className="fixed w-full flex justify-between items-center px-6 py-4 md:px-12 z-50 bg-black/90 backdrop-blur-md">
-        <div className="flex items-center gap-3">
-          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-8" />
-          <div className="hidden md:flex items-center gap-8 ml-12">
-            <a href="#features" className="text-white/70 hover:text-white text-sm font-medium">Features</a>
-            <a href="#pricing" className="text-white/70 hover:text-white text-sm font-medium">Pricing</a>
-            <a href="#faq" className="text-white/70 hover:text-white text-sm font-medium">FAQ</a>
+      <header className="fixed w-full flex justify-between items-center px-6 py-3 z-50 bg-black border-b border-gray-800">
+        <div className="flex items-center gap-6">
+          <img src="/youbuidlsocialsvg.svg" alt="YouBuild Protocol Logo" className="h-10" />
+          <div className="hidden md:flex items-center gap-8">
+            <div className="relative group">
+              <button className="flex items-center gap-2 text-white hover:text-purple-400 text-base font-medium">
+                All Pages
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <a href="#company" className="text-white hover:text-purple-400 text-base font-medium">Company</a>
+            <a href="#career" className="text-white hover:text-purple-400 text-base font-medium">Career</a>
           </div>
         </div>
-        <div className="hidden md:flex items-center gap-4">
-          <a href="#login" className="text-white/70 hover:text-white text-sm font-medium">Log in</a>
-          <a href="#get-started" className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-white/90 transition">Get Started</a>
+        <div className="hidden md:flex items-center gap-6">
+          <div className="relative">
+            <div className="absolute -top-2 -right-2 w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center text-xs text-white">0</div>
+            <button className="text-white hover:text-purple-400">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 7h-16l-.001 2m16.001-2c0-1.105-.895-2-2-2h-12c-1.105 0-2 .895-2 2m16 0v10c0 1.105-.895 2-2 2h-12c-1.105 0-2-.895-2-2v-10"/>
+                <path d="M9 11v6m6-6v6"/>
+              </svg>
+            </button>
+          </div>
+          <a href="#get-started" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-full text-base font-medium transition-all duration-200 flex items-center gap-2">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14m-7-7l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
         <button
           className="md:hidden text-white text-2xl focus:outline-none"
