@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 
 @layer base {
+  :root {
+    --framer-font-family: Inter, sans-serif;
+    --framer-font-style: normal;
+    --framer-font-weight: 400;
+    --framer-text-color: #000;
+    --framer-font-size: 16px;
+  }
   html {
     scroll-behavior: smooth;
   }
